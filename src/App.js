@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Feed, Project, CreateProject } from "pages";
-import { URL } from "./constants";
+import { URL } from "./constant";
 
 const App = () => {
     return (
@@ -14,4 +14,3 @@ const App = () => {
 };
 
 export default App;
-
