@@ -1,7 +1,8 @@
 import React from "react";
 
 const Project = (props) => {
-    return <div>Project {props.match.params.projectId}</div>;
+    const projectId = props.match.params.projectId;
+    return <div>Project {projectId}</div>;
 };
 
 export default Project;
