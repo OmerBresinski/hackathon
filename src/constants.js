@@ -1,5 +1,5 @@
-export default URL = {
-    feed: "feed",
-    project: "project",
-    createProject: "createProject",
+export const URL = {
+    feed: "/feed",
+    project: "/project",
+    createProject: "/createProject",
 };

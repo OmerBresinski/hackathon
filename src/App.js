@@ -1,19 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Feed, Project, CreateProject } from "pages";
+import { URL } from "./constants";
 
 const App = () => {
     return (
-        <>
-            <Router>
-                <Route path={URL.feed} component={Feed} exact />
-                <Route path={URL.project} component={Project} exact />
-                <Route
-                    path={URL.createProject}
-                    component={CreateProject}
-                    exact
-                />
-            </Router>
-        </>
+        <Router>
+            <Route path={URL.feed} component={Feed} exact />
+            <Route path={`${URL.project}/:projectId`} component={Project} />
+            <Route path={URL.createProject} component={CreateProject} exact />
+        </Router>
     );
 };
 
