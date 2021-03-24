@@ -5,9 +5,9 @@ import * as S from './style'
 
 
 function Card(props) {
-
     return (
         <S.CardContainer>
+            <S.Image src={props.image}></S.Image>
             <S.HeaderContainer>
                 <S.ProfileContainer>
                     <Avatar src={props.userProfileImage} width={"50px"} height={"50px"} />
@@ -16,12 +16,11 @@ function Card(props) {
             <S.Header>
                 <Text bold> {props.title}</Text>
             </S.Header>
-            <S.Image src={props.image}></S.Image>
-            <S.Text><Text>{props.description}</Text></S.Text>
+            <S.Text>
+                <Text>{props.description}</Text>
+            </S.Text>
         </S.CardContainer>
-    )
-
-
+    );
 }
 
-export default Card
+export default Card;

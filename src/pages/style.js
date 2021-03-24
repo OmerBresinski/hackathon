@@ -55,5 +55,14 @@ export const WhoAreWeRight = styled.div``;
 export const Dots = styled.div`
     display: flex;
     gap: 5px;
-    margin-block-end: 100px;
+    margin-block-end: 135px;
+`;
+
+export const Projects = styled.div``;
+
+export const ProjectHeader = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 `;
