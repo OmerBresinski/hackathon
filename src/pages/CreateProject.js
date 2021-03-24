@@ -20,7 +20,7 @@ const CreateProject = () => {
                 value={form.projectName}
                 onChange={handleChange}
             />
-            <Button label={"Submit"} onClick={submit} />
+            <Button label={"Join us"} onClick={submit} width='200px' />
         </>
     );
 };
