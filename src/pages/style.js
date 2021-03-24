@@ -58,7 +58,9 @@ export const Dots = styled.div`
     margin-block-end: 135px;
 `;
 
-export const Projects = styled.div``;
+export const Projects = styled.div`
+    padding: 0px 20px;
+`;
 
 export const ProjectHeader = styled.div`
     display: flex;
