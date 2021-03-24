@@ -2,6 +2,7 @@ import React from "react";
 import header_right from "assets/header_right.png";
 import header_left from "assets/header_left.png";
 import who_are_we from "assets/who_are_we.png";
+import our_process from "assets/our_process.png";
 import Text from "components/Text";
 import Projects from "components/Projects";
 import * as S from "./style";
@@ -73,6 +74,13 @@ const Home = ({ projects }) => {
                     <Projects projects={projects?.slice(0, 3)} />
                 </S.ProjectHeader>
             </S.Projects>
+            <div style={{ marginBlockStart: "140px", marginBlockEnd: "110px" }}>
+                <img
+                    src={our_process}
+                    alt=''
+                    style={{ maxWidth: "100vw", height: "auto" }}
+                />
+            </div>
         </S.Home>
     );
 };

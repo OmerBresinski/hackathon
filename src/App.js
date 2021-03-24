@@ -8,6 +8,7 @@ import project4 from "assets/project4.jpg";
 import project5 from "assets/project5.jpg";
 import project6 from "assets/project6.jpg";
 import project7 from "assets/project7.jpg";
+import footer from "assets/footer.png";
 import NavBar from "components/NavBar";
 import { URL } from "./constant";
 import { getUsers } from "./service";
@@ -56,6 +57,13 @@ const App = () => {
                     exact
                 />
             </Router>
+            <div style={{ display: "flex", marginTop: "50px" }}>
+                <img
+                    src={footer}
+                    alt=''
+                    style={{ maxWidth: "100vw", height: "auto" }}
+                />
+            </div>
         </>
     );
 };
