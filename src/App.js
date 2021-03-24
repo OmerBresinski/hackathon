@@ -27,7 +27,6 @@ const App = () => {
                 id: user.id
             }
         })
-        console.log(usersProjects)
         setProjectsData(usersProjects)
     }
 
