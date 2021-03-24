@@ -54,7 +54,7 @@ export const WhoAreWeRight = styled.div``;
 
 export const Dots = styled.div`
     display: flex;
-    gap: 5px;
+    gap: 20px;
     margin-block-end: 135px;
 `;
 
@@ -66,3 +66,33 @@ export const ProjectHeader = styled.div`
     align-items: center;
     gap: 5px;
 `;
+
+export const FormContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+
+`
+
+export const CreateProjectContainer = styled.div`
+    padding: 100px;
+
+`
+
+export const FormCardContainer = styled.div`
+    padding: 50px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);`
+
+export const BottomFormSection = styled.div`
+display:flex;
+justify-content: space-around;
+margin-top: 60px;
+`

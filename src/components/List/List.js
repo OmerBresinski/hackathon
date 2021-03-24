@@ -9,7 +9,6 @@ function List(props) {
         <S.ListContainer>
     
             {props.items.filter((item) => props.searchString ? item.title.toLowerCase().includes(props.searchString.toLowerCase()) : item).map((item) => {
-                console.log(item)
                 return (<Card key={item.id} title={item.title} description={item.description} image={item.image} userProfileImage={item.userProfileImage} />)
             })}
         </S.ListContainer>
