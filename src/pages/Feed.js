@@ -5,7 +5,7 @@ const Feed = () => {
     return <List items={projects} />
 };
 
-const projects = [{ title: 'a', description: 'sadaas', id: 123 }, { title: 'fdsdwe', description: 'sadfnejfeufheuaas', id: 123 }]
+const projects = [{ title: 'a', description: 'sadaas', id: 123, userProfileImage: '' }, { title: 'fdsdwe', description: 'sadfnejfeufheuaas', id: 123 }]
 
 
 export default Feed;
