@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import Text from "components/Text";
 import Avatar from "components/Avatar";
 import Button from "components/Button";
 import * as S from "./style";
 import { URL } from "constant";
+import TextInput from "components/TextInput";
 
-function Card(props) {
+function ProjectCard(props) {
     const history = useHistory();
+    const [messageValue, setMessageValue] = useState("")
+    const [messages, setMessages] = useState([])
+
+    const handleChange = (field) => {
+        setMessageValue(field.value)
+    }
+
+    const handleIconClick = () => {
+        console.log(messageValue)
+        const messagesArray = [...messages]
+        messagesArray.push(messageValue)
+        setMessageValue("")
+        setMessages(messagesArray)
+    }
 
     return (
         <S.CardContainer width={props.width}>
-            <S.Image src={props.image}></S.Image>
             <S.HeaderContainer>
                 <S.ProfileContainer>
                     <Avatar
@@ -31,22 +45,23 @@ function Card(props) {
             </S.HeaderContainer>
             <S.Description>
                 <S.Text>
-                    <Text>{props.description}</Text>
+                    <Text size={'18px'}>{props.description}</Text>
                 </S.Text>
-                <S.Wanted>
-                    {props.lookingFor?.map((wanted) => (
-                        <S.WantedRow>
-                            <S.Dot />
-                            <Text size='14px' color='#333333'>
-                                {wanted}
-                            </Text>
-                        </S.WantedRow>
-                    ))}
-                </S.Wanted>
             </S.Description>
+            <S.Image src={props.image}></S.Image>
+            <S.MessagesInput>
+                <TextInput placeholder={"Type your message..."} onChange={handleChange} fieldName={"message"} onClick={handleIconClick} value={messageValue}></TextInput>
+            </S.MessagesInput>
+            <S.Meesages>
+                {messages?.map((item) => {
+                    return (<S.MessageBox>
+                        <Text>{item}</Text>
+                    </S.MessageBox>)
+                })}
+            </S.Meesages>
             <S.ButtonWrapper>
                 <Button
-                    label='Read More'
+                    label='Join Project'
                     height='40px'
                     width='50px'
                     textSize='14px'
@@ -57,4 +72,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default ProjectCard;

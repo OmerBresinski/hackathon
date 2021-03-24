@@ -5,11 +5,13 @@ export const CardContainer = styled.div`
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    width: ${props => props.width ? props.width : `315px`};
-    height: 615px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
 `;
 
 export const HeaderContainer = styled.div`
@@ -36,41 +38,17 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     text-align: start;
-    padding: 3px 20px;
+    padding: 80px;
+    padding-top: 3px;
 `;
 
 export const Text = styled.div``;
 
 export const Image = styled.img`
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-`;
-
-export const Wanted = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 10px;
-    margin-inline-start: 8px;
-    margin-block-start: 15px;
-`;
-
-export const WantedRow = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-`;
-
-export const Dot = styled.div`
-    min-height: 12px;
-    min-width: 12px;
-    max-height: 12px;
-    max-width: 12px;
-    border-radius: 50%;
-    background: #158aff;
+    width: 250px;
+    height: 230px;
+    border-radius: 30px;
+    margin-inline-start: 80px;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -79,4 +57,29 @@ export const ButtonWrapper = styled.div`
     justify-content: flex-start;
     margin-block-start: 30px;
     margin-inline-start: 45px;
+    justify-content: center;
 `;
+
+export const MessagesInput = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-block-start: 30px;
+    margin-inline-start: 45px;
+    justify-content: center;
+`;
+
+export const Meesages = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-block-start: 30px;
+    margin-inline-start: 45px;
+    justify-content: center;
+    flex-direction: column;
+`;
+
+export const MessageBox = styled.div`
+    border-bottom: 1px solid #f3f3f3;
+    margin: 20px 0;
+`

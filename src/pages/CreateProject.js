@@ -27,7 +27,14 @@ const CreateProject = (props) => {
 
     const submit = () => {
         const id = uniqid()
-        const project = { id: id, title: form.title, description: form.description, lookingFor: [form.role], image: project7, userProfileImage: props.activeUser.userProfileImage }
+        const project = {
+            ...props.activeUser,
+            id: id,
+            title: form.title,
+            description: form.description,
+            lookingFor: [form.role],
+            image: project7,
+        }
         props.onSubmitProject(project)
         history.push(`${URL.project}/${id}`);
     };

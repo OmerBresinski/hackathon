@@ -105,3 +105,9 @@ export const Separator = styled.div`
     width: 100%;
     height: 2px;
 `;
+
+export const ProjectCardWrapper = styled.div`
+    display:flex;
+    margin: 50px;
+    justify-content: center;
+`;

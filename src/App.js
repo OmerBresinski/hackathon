@@ -48,18 +48,14 @@ const App = () => {
 
 
     const fetchActiveUser = async () => {
-        const user = await getUsers(1);
+        const users= await getUsers();
+        const user = users[0]
+        console.log(user)
         setActiveUser({
             ...user,
-            description: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-            title: "Final project",
             userName: `${user.firstName} ${user.lastName}`,
             userProfileImage: user.picture,
-            image: projects[7]?.image,
-            id: user.id,
-            role: projects[7]?.role,
-            lookingFor: projects[7]?.lookingFor,
-
+            role: projects[7]?.role
         });
     };
 
