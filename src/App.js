@@ -15,9 +15,11 @@ import { getUsers } from "./service";
 
 const App = () => {
     const [projectsData, setProjectsData] = useState([]);
+    const [activeUser, setActiveUser] = useState({})
 
     useEffect(() => {
         fetchFakeData();
+        fetchActiveUser()
     }, []);
 
     const handleProjectSubmit = (projectInfo) => {
@@ -44,6 +46,23 @@ const App = () => {
         setProjectsData(usersProjects);
     };
 
+
+    const fetchActiveUser = async () => {
+        const user = await getUsers(1);
+        setActiveUser({
+            ...user,
+            description: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            title: "Final project",
+            userName: `${user.firstName} ${user.lastName}`,
+            userProfileImage: user.picture,
+            image: projects[7]?.image,
+            id: user.id,
+            role: projects[7]?.role,
+            lookingFor: projects[7]?.lookingFor,
+
+        });
+    };
+
     return (
         <>
             <NavBar />
@@ -64,7 +83,7 @@ const App = () => {
                 />
                 <Route
                     path={URL.createProject}
-                    component={() => <CreateProject onSubmitProject={handleProjectSubmit}></CreateProject>}
+                    component={() => <CreateProject onSubmitProject={handleProjectSubmit} activeUser={activeUser} />}
                     exact
                 />
             </Router>
