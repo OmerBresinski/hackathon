@@ -9,6 +9,7 @@ const Button = ({
     width = "fit-content",
     bgColor = "#158AFF",
     textColor = "white",
+    textSize = "18px",
     borderColor = "transparent",
     hoverBgColor = "white",
     hoverBorderColor = "#158AFF",
@@ -36,7 +37,7 @@ const Button = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Text color={visibleTextColor} size='18px' bold>
+            <Text color={visibleTextColor} size={textSize} bold>
                 {label}
             </Text>
         </S.Button>
