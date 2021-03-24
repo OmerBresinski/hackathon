@@ -50,7 +50,12 @@ const App = () => {
                     path={URL.feed}
                     component={() => <Feed items={projectsData}></Feed>}
                 ></Route>
-                <Route path={`${URL.project}/:projectId`} component={Project} />
+                <Route
+                    path={`${URL.project}/:projectId`}
+                    component={(props) => (
+                        <Project {...props} projects={projectsData} />
+                    )}
+                />
                 <Route
                     path={URL.createProject}
                     component={CreateProject}
