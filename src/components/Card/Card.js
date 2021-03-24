@@ -1,3 +1,4 @@
+import { Avatar } from 'components/Avatar/style'
 import Text from 'components/Text'
 import React from 'react'
 import * as S from './style'
@@ -7,9 +8,11 @@ function Card(props) {
 
     return (
         <S.CardContainer>
-            <S.ProfileContainer>
-                
-            </S.ProfileContainer>
+            <S.HeaderContainer>
+                <S.ProfileContainer>
+                    <Avatar src={props.userProfileImage}/>
+                </S.ProfileContainer>
+            </S.HeaderContainer>
             <S.Header>
                 <Text bold> {props.title}</Text>
             </S.Header>
