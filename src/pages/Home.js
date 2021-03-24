@@ -13,7 +13,7 @@ const Home = () => {
                         paddingInlineStart: "200px",
                     }}
                 >
-                    <img src={header_left} style={{ height: "305px" }} />
+                    <img src={header_left} alt='' style={{ height: "305px" }} />
                 </div>
                 <div>
                     <img
