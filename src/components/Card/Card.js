@@ -7,6 +7,9 @@ function Card(props) {
 
     return (
         <S.CardContainer>
+            <S.ProfileContainer>
+                
+            </S.ProfileContainer>
             <S.Header>
                 <Text bold> {props.title}</Text>
             </S.Header>
