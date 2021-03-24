@@ -66,7 +66,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "Project 1",
         role: "Software Developer",
-        lookingFor: ["UX/UI Designers", "Marketing Majors", "AI Researchers"],
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project1,
     },
     {
@@ -82,11 +82,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Marketing",
-        lookingFor: [
-            "Film Makers",
-            "Environmental Researchers",
-            "Web Developers",
-        ],
+        lookingFor: ["Film Makers", "Web Developers"],
         image: project3,
     },
     {
@@ -110,7 +106,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Film Maker",
-        lookingFor: ["UX/UI Designers", "Marketing Majors", "AI Researchers"],
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project6,
     },
     {
@@ -118,7 +114,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers, Web Developers"],
+        lookingFor: ["Film Makers, Environmental Researchers"],
         image: project7,
     },
 ];

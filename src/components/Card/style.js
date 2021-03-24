@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
     text-align: center;
     margin: 20px;
     width: 350px;
-    height: 580px;
+    height: 615px;
 `;
 
 export const HeaderContainer = styled.div`
@@ -71,4 +71,12 @@ export const Dot = styled.div`
     max-width: 12px;
     border-radius: 50%;
     background: #158aff;
+`;
+
+export const ButtonWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-block-start: 30px;
+    margin-inline-start: 45px;
 `;

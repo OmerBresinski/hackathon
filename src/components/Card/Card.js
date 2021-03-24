@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "components/Text";
 import Avatar from "components/Avatar";
+import Button from "components/Button";
 import * as S from "./style";
 
 function Card(props) {
@@ -39,6 +40,14 @@ function Card(props) {
                     ))}
                 </S.Wanted>
             </S.Description>
+            <S.ButtonWrapper>
+                <Button
+                    label='Read More'
+                    height='40px'
+                    width='50px'
+                    textSize='14px'
+                />
+            </S.ButtonWrapper>
         </S.CardContainer>
     );
 }
