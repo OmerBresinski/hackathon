@@ -61,6 +61,7 @@ const App = () => {
                 <Route
                     path={URL.home}
                     component={() => <Home projects={projectsData} />}
+                    exact
                 />
             </Router>
             <div style={{ display: "flex", marginTop: "50px" }}>
