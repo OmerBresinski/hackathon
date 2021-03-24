@@ -70,7 +70,7 @@ const Home = ({ projects }) => {
                         Access our network of projects and interesting
                         collaborations.
                     </Text>
-                    <Projects projects={projects?.slice(0, 6)} />
+                    <Projects projects={projects?.slice(0, 3)} />
                 </S.ProjectHeader>
             </S.Projects>
         </S.Home>

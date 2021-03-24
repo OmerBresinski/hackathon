@@ -1,10 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router";
 import Text from "components/Text";
 import Avatar from "components/Avatar";
 import Button from "components/Button";
 import * as S from "./style";
+import { URL } from "constant";
 
 function Card(props) {
+    const history = useHistory();
+
     return (
         <S.CardContainer>
             <S.Image src={props.image}></S.Image>
@@ -46,6 +50,7 @@ function Card(props) {
                     height='40px'
                     width='50px'
                     textSize='14px'
+                    onClick={() => history.push(`${URL.project}/${props.id}`)}
                 />
             </S.ButtonWrapper>
         </S.CardContainer>

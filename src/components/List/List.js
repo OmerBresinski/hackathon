@@ -17,6 +17,7 @@ function List(props) {
                     return (
                         <Card
                             key={item.id}
+                            id={item.id}
                             title={item.title}
                             userName={item.userName}
                             description={item.description}
