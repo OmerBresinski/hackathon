@@ -40,8 +40,8 @@ const App = () => {
 
     return (
         <>
-            <NavBar />
             <Router>
+                <NavBar />
                 <Route
                     path={URL.home}
                     component={() => <Home projects={projectsData} />}

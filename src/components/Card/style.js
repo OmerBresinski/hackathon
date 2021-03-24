@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
     border: 1px solid #c3c3c3;
-    border-radius: 50px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,8 +44,8 @@ export const Text = styled.div``;
 export const Image = styled.img`
     width: 100%;
     height: auto;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 `;
 
 export const Wanted = styled.div`
