@@ -47,7 +47,7 @@ export const Dot = styled.div`
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background: #979797;
+    background: lightgray;
 `;
 
 export const WhoAreWeRight = styled.div``;
