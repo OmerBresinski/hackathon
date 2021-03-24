@@ -20,6 +20,12 @@ const App = () => {
         fetchFakeData();
     }, []);
 
+    const handleProjectSubmit = (projectInfo) => {
+        const projects = [...projectsData]
+        projects.push(projectInfo)
+        setProjectsData(projects)
+    }
+
     const fetchFakeData = async () => {
         const users = await getUsers();
         const usersProjects = users.map((user, index) => {
@@ -58,7 +64,7 @@ const App = () => {
                 />
                 <Route
                     path={URL.createProject}
-                    component={CreateProject}
+                    component={() => <CreateProject onSubmitProject={handleProjectSubmit}></CreateProject>}
                     exact
                 />
             </Router>

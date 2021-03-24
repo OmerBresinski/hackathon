@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Text from 'components/Text'
 import * as S from './style'
+import uniqid from "uniqid";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,13 +19,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const CreateProject = () => {
+const CreateProject = (props) => {
     const history = useHistory();
     const { form, handleChange } = useForm();
     const classes = useStyles();
 
     const submit = () => {
-        history.push(`${URL.project}/${form.projectName}`);
+        const id = uniqid()
+        const project = { id: id, title: form.title, description: form.description, lookingFor: [form.role] }
+        props.onSubmitProject(project)
+        history.push(`${URL.project}/${id}`);
     };
 
     const handleFieldChange = (value, fieldName) => {
@@ -34,7 +38,7 @@ const CreateProject = () => {
     return (
         <S.CreateProjectContainer>
             <S.FormCardContainer>
-                <Text bold size={'20px'}>{'Upload Project'}</Text>
+                <Text bold size={'40px'}>{'Upload Project'}</Text>
                 <S.FormContainer>
                     <form className={classes.root} noValidate autoComplete="off">
 
