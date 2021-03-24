@@ -1,4 +1,4 @@
-import { Avatar } from 'components/Avatar/style'
+import Avatar from 'components/Avatar'
 import Text from 'components/Text'
 import React from 'react'
 import * as S from './style'
@@ -10,7 +10,7 @@ function Card(props) {
         <S.CardContainer>
             <S.HeaderContainer>
                 <S.ProfileContainer>
-                    <Avatar src={props.userProfileImage}/>
+                    <Avatar src={props.userProfileImage} width={"50px"} height={"50px"} />
                 </S.ProfileContainer>
             </S.HeaderContainer>
             <S.Header>

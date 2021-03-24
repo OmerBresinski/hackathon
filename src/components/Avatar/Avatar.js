@@ -1,20 +1,15 @@
-import React, { useState } from "react";
-import Text from "components/Text";
+import React from "react";
 import * as S from "./style";
 
-const Avatar = ({
-    height = "50px",
-    width = "50px",
-    src = "",
-}) => {
+const Avatar = (props) => {
 
     return (
-        <S.Avatar
-            width={width}
-            height={height}
+        <S.AvatarContainer
+            width={props.width}
+            height={props.height}
         >
-            <Image src={src} />
-        </S.Avatar>
+            <S.Image src={props.src} />
+        </S.AvatarContainer>
     );
 };
 

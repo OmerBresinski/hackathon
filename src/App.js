@@ -16,17 +16,18 @@ const App = () => {
 
     const fetchFakeData = async () => {
         const users = await getUsers()
-        console.log(users)
         const usersProjects = users.map((user, index) => {
             return {
-                ...users,
+                ...user,
                 description: projects[index]?.description,
                 title: projects[index]?.title,
                 userName: `${user.firstName}${user.lastName}`,
-                image: user.picture,
+                userProfileImage: user.picture,
+                image: `https://fakeimg.pl/250x100/?text=Hello`,
                 id: user.id
             }
         })
+        console.log(usersProjects)
         setProjectsData(usersProjects)
     }
 
@@ -34,8 +35,7 @@ const App = () => {
         <>
             <NavBar />
             <Router>
-                <Route path={URL.feed} render={
-                    (props) => <Feed {...props} items={projectsData} exact />}></Route>
+                <Route path={URL.feed} component={() => <Feed items={projectsData}></Feed>}></Route>
                 <Route path={`${URL.project}/:projectId`} component={Project} />
                 <Route
                     path={URL.createProject}
