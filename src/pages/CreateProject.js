@@ -12,7 +12,7 @@ import * as S from './style'
 const useStyles = makeStyles((theme) => ({
     root: {
         '& .MuiTextField-root': {
-            margin: theme.spacing(1),
+            margin: theme.spacing(2),
             width: '100%',
         },
     },
@@ -28,7 +28,7 @@ const CreateProject = () => {
     };
 
     const handleFieldChange = (value, fieldName) => {
-       handleChange(fieldName,value)
+        handleChange({ fieldName: fieldName, value: value })
     }
 
     return (
@@ -50,6 +50,9 @@ const CreateProject = () => {
                             onChange={(event) => handleFieldChange(event.target.value, "description")}
                             multiline={true}
                             rows={8} />
+                    </form>
+                    <S.Separator></S.Separator>
+                    <form>
                         <S.BottomFormSection>
                             <TextField id="filled-role-input"
                                 label="Fields i'm looking for"
@@ -57,13 +60,12 @@ const CreateProject = () => {
                                 variant="outlined"
                                 onChange={(event) => handleFieldChange(event.target.value, "role")} />
                             <TextField id="filled-attachment-input"
-                                label="Attachment"
+                                label="Attachments"
                                 type="attachment"
                                 variant="outlined"
                                 onChange={(event) => handleFieldChange(event.target.value, "attachment")} />
                         </S.BottomFormSection>
                     </form>
-
                     <Button label={"Done"} onClick={submit} width='40px' height={'30px'} />
                 </S.FormContainer>
             </S.FormCardContainer>

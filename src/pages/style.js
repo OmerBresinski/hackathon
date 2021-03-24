@@ -94,5 +94,12 @@ export const FormCardContainer = styled.div`
 export const BottomFormSection = styled.div`
 display:flex;
 justify-content: space-around;
-margin-top: 60px;
+margin: 30px 0;
+gap: 35px;
 `
+
+export const Separator = styled.div`
+    background-color: #c3c3c3;
+    width: 100%;
+    height: 2px;
+`;
