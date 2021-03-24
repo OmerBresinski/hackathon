@@ -7,9 +7,9 @@ import Button from "components/Button";
 import * as S from "./style";
 import { URL } from "constant";
 
-const NavBar = (props) => {
+const NavBar = () => {
     const history = useHistory();
-    console.log(history);
+
     return (
         <S.NavBar>
             <S.NavGroup>

@@ -43,10 +43,6 @@ const App = () => {
             <Router>
                 <NavBar />
                 <Route
-                    path={URL.home}
-                    component={() => <Home projects={projectsData} />}
-                />
-                <Route
                     path={URL.feed}
                     component={() => <Feed items={projectsData}></Feed>}
                 ></Route>
@@ -60,6 +56,11 @@ const App = () => {
                     path={URL.createProject}
                     component={CreateProject}
                     exact
+                />
+
+                <Route
+                    path={URL.home}
+                    component={() => <Home projects={projectsData} />}
                 />
             </Router>
             <div style={{ display: "flex", marginTop: "50px" }}>
