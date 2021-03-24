@@ -13,16 +13,36 @@ const NavBar = (props) => {
                 <img src={notification} alt='' style={{ cursor: "pointer" }} />
             </S.NavGroup>
             <S.NavGroup>
-                <Text color='#3C3C3C' size='14px' onClick={() => {}}>
+                <Text
+                    hoverColor='#3C3C3C'
+                    color='darkgray'
+                    size='14px'
+                    onClick={() => {}}
+                >
                     About
                 </Text>
-                <Text color='#3C3C3C' size='14px' onClick={() => {}}>
+                <Text
+                    hoverColor='#3C3C3C'
+                    color='darkgray'
+                    size='14px'
+                    onClick={() => {}}
+                >
                     Projects
                 </Text>
-                <Text color='#3C3C3C' size='14px' onClick={() => {}}>
+                <Text
+                    hoverColor='#3C3C3C'
+                    color='darkgray'
+                    size='14px'
+                    onClick={() => {}}
+                >
                     Success Stories
                 </Text>
-                <Text color='#3C3C3C' size='14px' onClick={() => {}}>
+                <Text
+                    hoverColor='#3C3C3C'
+                    color='darkgray'
+                    size='14px'
+                    onClick={() => {}}
+                >
                     Join Us
                 </Text>
                 <Button
