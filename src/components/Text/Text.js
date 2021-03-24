@@ -8,6 +8,7 @@ function Text(props) {
             size={props.size}
             color={props.color}
             hoverColor={props.hoverColor}
+            withPointer={props.onClick}
         >
             {props.children}
         </S.TextContainer>
