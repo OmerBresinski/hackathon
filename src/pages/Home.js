@@ -9,7 +9,7 @@ const Home = () => {
             <S.Header>
                 <div
                     style={{
-                        paddingBlockStart: "290px",
+                        paddingBlockStart: "270px",
                         paddingInlineStart: "200px",
                     }}
                 >
