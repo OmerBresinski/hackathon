@@ -37,7 +37,12 @@ const Button = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Text color={visibleTextColor} size={textSize} bold>
+            <Text
+                color={visibleTextColor}
+                size={textSize}
+                bold
+                onClick={() => {}}
+            >
                 {label}
             </Text>
         </S.Button>

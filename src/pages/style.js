@@ -47,7 +47,7 @@ export const Dot = styled.div`
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background: #979797;
+    background: lightgray;
 `;
 
 export const WhoAreWeRight = styled.div``;
@@ -58,7 +58,9 @@ export const Dots = styled.div`
     margin-block-end: 135px;
 `;
 
-export const Projects = styled.div``;
+export const Projects = styled.div`
+    padding: 0px 20px;
+`;
 
 export const ProjectHeader = styled.div`
     display: flex;

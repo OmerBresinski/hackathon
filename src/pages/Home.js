@@ -2,39 +2,12 @@ import React from "react";
 import header_right from "assets/header_right.png";
 import header_left from "assets/header_left.png";
 import who_are_we from "assets/who_are_we.png";
-import project1 from "assets/project1.jpg";
+import our_process from "assets/our_process.png";
 import Text from "components/Text";
 import Projects from "components/Projects";
 import * as S from "./style";
 
-const Home = () => {
-    const projects = [
-        {
-            title: "title",
-            description: "description",
-            image: project1,
-            userProfileImage: "userProfileImage",
-        },
-        {
-            title: "title",
-            description: "description",
-            image: "image",
-            userProfileImage: "userProfileImage",
-        },
-        {
-            title: "title",
-            description: "description",
-            image: "image",
-            userProfileImage: "userProfileImage",
-        },
-        {
-            title: "title",
-            description: "description",
-            image: "image",
-            userProfileImage: "userProfileImage",
-        },
-    ];
-
+const Home = ({ projects }) => {
     return (
         <S.Home>
             <S.Header>
@@ -67,7 +40,7 @@ const Home = () => {
                         </Text>
                     </S.WhoAreWeLeftTop>
                     <S.WhoAreWeLeftBottom>
-                        <Text size='18px' color='#8C8E96' bold>
+                        <Text size='18px' color='#8C8E96'>
                             We are a global platform for young people to develop
                             their projects. Through collaborative work of its
                             members, the exchanges that mature the
@@ -98,9 +71,16 @@ const Home = () => {
                         Access our network of projects and interesting
                         collaborations.
                     </Text>
-                    <Projects projects={projects} />
+                    <Projects projects={projects?.slice(0, 3)} />
                 </S.ProjectHeader>
             </S.Projects>
+            <div style={{ marginBlockStart: "140px", marginBlockEnd: "110px" }}>
+                <img
+                    src={our_process}
+                    alt=''
+                    style={{ maxWidth: "100vw", height: "auto" }}
+                />
+            </div>
         </S.Home>
     );
 };

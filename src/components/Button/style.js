@@ -6,7 +6,7 @@ export const Button = styled.div`
     align-items: center;
     justify-content: center;
     background: ${({ bgColor }) => bgColor};
-    min-width: 160px;
+    min-width: 130px;
     width: ${({ width }) => width};
     border: 2px solid ${({ borderColor }) => borderColor};
     border-radius: 35px;
