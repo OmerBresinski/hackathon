@@ -42,7 +42,7 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     text-align: start;
-    padding: 80px;
+    padding: 80px 80px 40px;
     padding-top: 3px;
 `;
 
@@ -84,4 +84,4 @@ export const Meesages = styled.div`
 export const MessageBox = styled.div`
     border-bottom: 1px solid #f3f3f3;
     margin: 20px 0;
-`
+`;

@@ -103,7 +103,7 @@ export const BottomFormSection = styled.div`
 export const Separator = styled.div`
     background-color: #c3c3c3;
     width: 100%;
-    height: 2px;
+    height: 1px;
 `;
 
 export const Feed = styled.div`

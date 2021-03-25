@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     align-items: center;
     text-align: center;
     margin: 20px;
-    width: ${props => props.width ? props.width : `315px`};
+    width: ${(props) => (props.width ? props.width : `315px`)};
     height: 615px;
 `;
 
@@ -36,6 +36,7 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     text-align: start;
+    min-width: 275px;
     padding: 3px 20px;
 `;
 

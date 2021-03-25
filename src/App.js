@@ -24,7 +24,7 @@ const App = () => {
 
     const handleProjectSubmit = (projectInfo) => {
         const projects = [...projectsData];
-        projects.push(projectInfo);
+        projects.unshift(projectInfo);
         setProjectsData(projects);
     };
 
@@ -62,7 +62,10 @@ const App = () => {
             <Router>
                 <NavBar />
                 <Route path={URL.feed} component={() => <Feed items={projectsData}></Feed>}></Route>
-                <Route path={`${URL.project}/:projectId`} component={(props) => <Project {...props} projects={projectsData} />} />
+                <Route
+                    path={`${URL.project}/:projectId`}
+                    component={(props) => <Project {...props} projects={projectsData} activeUser={activeUser} />}
+                />
                 <Route
                     path={URL.createProject}
                     component={() => <CreateProject onSubmitProject={handleProjectSubmit} activeUser={activeUser} />}
@@ -82,7 +85,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "Project 1",
+        title: "Football Ranking (UAE/Israel)",
         role: "Software Developer",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project1,
@@ -91,7 +94,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "ggrgr",
+        title: "Day in a life short film",
         role: "UX/UI Designer",
         lookingFor: ["Web Developers", "Project Managers"],
         image: project2,
@@ -100,7 +103,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
+        title: "Chat WebApp (Morocco/Bahrain)",
         role: "Marketing",
         lookingFor: ["Film Makers", "Web Developers"],
         image: project3,
@@ -109,7 +112,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
+        title: "DNA/Chem Research (UAE/Israel)",
         role: "AI Researcher",
         lookingFor: ["Web Developers", "Archeology Majors"],
         image: project4,
@@ -118,7 +121,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
+        title: "Architecture Model App",
         role: "Web Developer",
         lookingFor: ["Chemical Engineers", "Software Developers"],
         image: project5,
@@ -127,7 +130,7 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
+        title: "Political Opinon App",
         role: "Film Maker",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project6,
@@ -136,115 +139,137 @@ const projects = [
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Chemical Engineers", "Software Developers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Film Makers", "Environmental Researchers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Web Developers", "Project Managers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
+        title: "Football Ranking (UAE/Israel)",
+        role: "Software Developer",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
-        image: project7,
+        image: project1,
+        time: "5 Weeks",
     },
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
+        title: "Day in a life short film",
+        role: "UX/UI Designer",
         lookingFor: ["Web Developers", "Project Managers"],
-        image: project7,
+        image: project2,
+        time: "20 Days",
     },
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Film Makers", "Environmental Researchers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["UX/UI Designers", "Marketing Majors"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Chemical Engineers", "Software Developers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Film Makers", "Environmental Researchers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
+        title: "Chat WebApp (Morocco/Bahrain)",
+        role: "Marketing",
         lookingFor: ["Film Makers", "Web Developers"],
-        image: project7,
+        image: project3,
+        time: "2 Weeks",
     },
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Chemical Engineers", "Software Developers"],
-        image: project7,
-    },
-    {
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
+        title: "DNA/Chem Research (UAE/Israel)",
+        role: "AI Researcher",
         lookingFor: ["Web Developers", "Archeology Majors"],
-        image: project7,
+        image: project4,
+        time: "1 Month",
     },
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
-        lookingFor: ["Software Engineers", "Environmental Researchers"],
-        image: project7,
+        title: "Architecture Model App",
+        role: "Web Developer",
+        lookingFor: ["Chemical Engineers", "Software Developers"],
+        image: project5,
+        time: "10 Days",
     },
     {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
-        title: "fhefeuf",
-        role: "Environmental Researcher",
+        title: "Football Ranking (UAE/Israel)",
+        role: "Software Developer",
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
+        image: project1,
+        time: "5 Weeks",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Day in a life short film",
+        role: "UX/UI Designer",
+        lookingFor: ["Web Developers", "Project Managers"],
+        image: project2,
+        time: "20 Days",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Chat WebApp (Morocco/Bahrain)",
+        role: "Marketing",
         lookingFor: ["Film Makers", "Web Developers"],
-        image: project7,
-        time: "1 Week",
+        image: project3,
+        time: "2 Weeks",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "DNA/Chem Research (UAE/Israel)",
+        role: "AI Researcher",
+        lookingFor: ["Web Developers", "Archeology Majors"],
+        image: project4,
+        time: "1 Month",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Architecture Model App",
+        role: "Web Developer",
+        lookingFor: ["Chemical Engineers", "Software Developers"],
+        image: project5,
+        time: "10 Days",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Political Opinon App",
+        role: "Film Maker",
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
+        image: project6,
+        time: "2 Months",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Football Ranking (UAE/Israel)",
+        role: "Software Developer",
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
+        image: project1,
+        time: "5 Weeks",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Day in a life short film",
+        role: "UX/UI Designer",
+        lookingFor: ["Web Developers", "Project Managers"],
+        image: project2,
+        time: "20 Days",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "Chat WebApp (Morocco/Bahrain)",
+        role: "Marketing",
+        lookingFor: ["Film Makers", "Web Developers"],
+        image: project3,
+        time: "2 Weeks",
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "DNA/Chem Research (UAE/Israel)",
+        role: "AI Researcher",
+        lookingFor: ["Web Developers", "Archeology Majors"],
+        image: project4,
+        time: "1 Month",
     },
 ];
 

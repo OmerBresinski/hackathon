@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from './style'
+import * as S from "./style";
 import ProjectCard from "components/ProjectCard";
 
 const Project = (props) => {
