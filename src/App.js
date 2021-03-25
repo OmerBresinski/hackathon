@@ -91,7 +91,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "AI Researcher",
-        lookingFor: ["Web Developers", "Project Managers"],
+        lookingFor: ["Web Developers", "Archeology Majors"],
         image: project4,
     },
     {
@@ -115,7 +115,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Chemical Engineers", "Software Developers"],
         image: project7,
     },
     {
@@ -123,7 +123,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Film Makers", "Environmental Researchers"],
         image: project7,
     },
     {
@@ -131,7 +131,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Web Developers", "Project Managers"],
         image: project7,
     },
     {
@@ -139,7 +139,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project7,
     },
     {
@@ -147,7 +147,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Web Developers", "Project Managers"],
         image: project7,
     },
     {
@@ -155,7 +155,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Film Makers", "Environmental Researchers"],
         image: project7,
     },
     {
@@ -163,7 +163,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project7,
     },
     {
@@ -171,7 +171,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Chemical Engineers", "Software Developers"],
         image: project7,
     },
     {
@@ -179,7 +179,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Film Makers", "Environmental Researchers"],
         image: project7,
     },
     {
@@ -187,7 +187,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Film Makers", "Web Developers"],
         image: project7,
     },
     {
@@ -195,7 +195,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Chemical Engineers", "Software Developers"],
         image: project7,
     },
     {
@@ -203,7 +203,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Web Developers", "Archeology Majors"],
         image: project7,
     },
     {
@@ -211,7 +211,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Software Engineers", "Environmental Researchers"],
         image: project7,
     },
     {
@@ -219,7 +219,7 @@ const projects = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
         title: "fhefeuf",
         role: "Environmental Researcher",
-        lookingFor: ["Film Makers, Environmental Researchers"],
+        lookingFor: ["Film Makers", "Web Developers"],
         image: project7,
     },
 ];

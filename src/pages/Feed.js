@@ -2,17 +2,7 @@ import React from "react";
 import { useForm } from "hooks";
 import List from "components/List/";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
 import * as S from "./style";
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        "& .MuiTextField-root": {
-            margin: theme.spacing(2),
-            width: "100%",
-        },
-    },
-}));
 
 const Feed = (props) => {
     const { form, handleChange } = useForm();
