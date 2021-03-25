@@ -50,7 +50,6 @@ const App = () => {
     const fetchActiveUser = async () => {
         const users= await getUsers();
         const user = users[0]
-        console.log(user)
         setActiveUser({
             ...user,
             userName: `${user.firstName} ${user.lastName}`,
