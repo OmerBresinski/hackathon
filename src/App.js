@@ -60,12 +60,8 @@ const App = () => {
 
     return (
         <>
-            <NavBar />
             <Router>
-                <Route
-                    path={URL.home}
-                    component={() => <Home projects={projectsData} />}
-                />
+                <NavBar />
                 <Route
                     path={URL.feed}
                     component={() => <Feed items={projectsData}></Feed>}
@@ -79,6 +75,12 @@ const App = () => {
                 <Route
                     path={URL.createProject}
                     component={() => <CreateProject onSubmitProject={handleProjectSubmit} activeUser={activeUser} />}
+                    exact
+                />
+
+                <Route
+                    path={URL.home}
+                    component={() => <Home projects={projectsData} />}
                     exact
                 />
             </Router>

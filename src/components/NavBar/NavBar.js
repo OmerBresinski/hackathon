@@ -1,11 +1,15 @@
 import React from "react";
+import { useHistory } from "react-router";
 import mail from "assets/mail.png";
 import notification from "assets/notification.png";
 import Text from "components/Text";
 import Button from "components/Button";
 import * as S from "./style";
+import { URL } from "constant";
 
-const NavBar = (props) => {
+const NavBar = () => {
+    const history = useHistory();
+
     return (
         <S.NavBar>
             <S.NavGroup>
@@ -25,7 +29,9 @@ const NavBar = (props) => {
                     hoverColor='#3C3C3C'
                     color='darkgray'
                     size='14px'
-                    onClick={() => {}}
+                    onClick={() => {
+                        history.push(URL.feed);
+                    }}
                 >
                     Projects
                 </Text>

@@ -1,5 +1,5 @@
 export const URL = {
-    home: "/home",
+    home: "/",
     feed: "/feed",
     project: "/project",
     createProject: "/createProject",
