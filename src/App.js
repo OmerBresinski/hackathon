@@ -51,7 +51,7 @@ const App = () => {
         const user = users[0];
         setActiveUser({
             ...user,
-            userName: `${user.firstName} ${user.lastName}`,
+            userName: `Omer Bresinski`,
             userProfileImage: user.picture,
             role: projects[0]?.role,
         });
