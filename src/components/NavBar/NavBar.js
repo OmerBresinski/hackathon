@@ -21,7 +21,7 @@ const NavBar = () => {
                     hoverColor='#3C3C3C'
                     color='darkgray'
                     size='14px'
-                    onClick={() => {}}
+                    onClick={() => { }}
                 >
                     About
                 </Text>
@@ -39,15 +39,15 @@ const NavBar = () => {
                     hoverColor='#3C3C3C'
                     color='darkgray'
                     size='14px'
-                    onClick={() => {}}
+                    onClick={() => { history.push(URL.createProject); }}
                 >
-                    Success Stories
+                    Start a Project
                 </Text>
                 <Text
                     hoverColor='#3C3C3C'
                     color='darkgray'
                     size='14px'
-                    onClick={() => {}}
+                    onClick={() => { }}
                 >
                     Join Us
                 </Text>

@@ -13,6 +13,7 @@ import project7 from "assets/project7.jpg"
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        
         '& .MuiTextField-root': {
             margin: theme.spacing(2),
             width: '100%',
@@ -34,6 +35,8 @@ const CreateProject = (props) => {
             description: form.description,
             lookingFor: [form.role],
             image: project7,
+            time: form.time,
+            link: form.link
         }
         props.onSubmitProject(project)
         history.push(`${URL.project}/${id}`);
@@ -48,8 +51,7 @@ const CreateProject = (props) => {
             <S.FormCardContainer>
                 <Text bold size={'40px'}>{'Upload Project'}</Text>
                 <S.FormContainer>
-                    <form className={classes.root} noValidate autoComplete="off">
-
+                    <form className={classes.root} noValidate autoComplete="off" style={{ width: '100%' }}>
                         <TextField id="filled-title-input"
                             label="Title"
                             type="title"
@@ -64,19 +66,25 @@ const CreateProject = (props) => {
                             rows={8} />
                     </form>
                     <S.Separator></S.Separator>
-                    <form>
+                    <form style={{ width: '100%' }} className={classes.root} noValidate autoComplete="off">
                         <S.BottomFormSection>
                             <TextField id="filled-role-input"
                                 label="Fields i'm looking for"
                                 type="field"
                                 variant="outlined"
                                 onChange={(event) => handleFieldChange(event.target.value, "role")} />
-                            <TextField id="filled-attachment-input"
-                                label="Attachments"
-                                type="attachment"
+                            <TextField id="filled-time-input"
+                                label="Esimated Duration"
                                 variant="outlined"
-                                onChange={(event) => handleFieldChange(event.target.value, "attachment")} />
+                                onChange={(event) => handleFieldChange(event.target.value, "time")} />
                         </S.BottomFormSection>
+                    </form>
+                    <form style={{ width: '100%' }} className={classes.root} noValidate autoComplete="off">
+                        <TextField id="filled-link-input"
+                            label="Social Media Link"
+                            type="link"
+                            variant="outlined"
+                            onChange={(event) => handleFieldChange(event.target.value, "link")} />
                     </form>
                     <Button label={"Done"} onClick={submit} width='40px' height={'30px'} />
                 </S.FormContainer>
