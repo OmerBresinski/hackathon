@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Text from 'components/Text'
 import * as S from './style'
 import uniqid from "uniqid";
+import project7 from "assets/project7.jpg"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +27,14 @@ const CreateProject = (props) => {
 
     const submit = () => {
         const id = uniqid()
-        const project = { id: id, title: form.title, description: form.description, lookingFor: [form.role] }
+        const project = {
+            ...props.activeUser,
+            id: id,
+            title: form.title,
+            description: form.description,
+            lookingFor: [form.role],
+            image: project7,
+        }
         props.onSubmitProject(project)
         history.push(`${URL.project}/${id}`);
     };

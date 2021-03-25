@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     align-items: center;
     text-align: center;
     margin: 20px;
-    width: 350px;
+    width: ${props => props.width ? props.width : `315px`};
     height: 615px;
 `;
 

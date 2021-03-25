@@ -10,7 +10,7 @@ function Card(props) {
     const history = useHistory();
 
     return (
-        <S.CardContainer>
+        <S.CardContainer width={props.width}>
             <S.Image src={props.image}></S.Image>
             <S.HeaderContainer>
                 <S.ProfileContainer>

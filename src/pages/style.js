@@ -117,5 +117,10 @@ export const InputWrapper = styled.div`
     display: flex;
     width: 500px;
     padding: 10px 0px;
+`;
+
+export const ProjectCardWrapper = styled.div`
+    display: flex;
+    margin: 50px;
     justify-content: center;
 `;
