@@ -53,7 +53,7 @@ const App = () => {
             ...user,
             userName: `${user.firstName} ${user.lastName}`,
             userProfileImage: user.picture,
-            role: projects[7]?.role,
+            role: projects[0]?.role,
         });
     };
 
@@ -86,6 +86,7 @@ const projects = [
         role: "Software Developer",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project1,
+        time: "5 Weeks",
     },
     {
         description:
@@ -94,6 +95,7 @@ const projects = [
         role: "UX/UI Designer",
         lookingFor: ["Web Developers", "Project Managers"],
         image: project2,
+        time: "20 Days",
     },
     {
         description:
@@ -102,6 +104,7 @@ const projects = [
         role: "Marketing",
         lookingFor: ["Film Makers", "Web Developers"],
         image: project3,
+        time: "2 Weeks",
     },
     {
         description:
@@ -110,6 +113,7 @@ const projects = [
         role: "AI Researcher",
         lookingFor: ["Web Developers", "Archeology Majors"],
         image: project4,
+        time: "1 Month",
     },
     {
         description:
@@ -118,6 +122,7 @@ const projects = [
         role: "Web Developer",
         lookingFor: ["Chemical Engineers", "Software Developers"],
         image: project5,
+        time: "10 Days",
     },
     {
         description:
@@ -126,6 +131,7 @@ const projects = [
         role: "Film Maker",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project6,
+        time: "2 Months",
     },
     {
         description:
@@ -238,6 +244,7 @@ const projects = [
         role: "Environmental Researcher",
         lookingFor: ["Film Makers", "Web Developers"],
         image: project7,
+        time: "1 Week",
     },
 ];
 

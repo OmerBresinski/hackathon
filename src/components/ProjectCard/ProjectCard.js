@@ -45,6 +45,9 @@ function ProjectCard(props) {
             </S.HeaderContainer>
             <S.Description>
                 <S.Text>
+                    <Text size={'18px'} bold>{props.title}</Text>
+                </S.Text>
+                <S.Text>
                     <Text size={'18px'}>{props.description}</Text>
                 </S.Text>
             </S.Description>

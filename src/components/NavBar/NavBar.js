@@ -40,8 +40,15 @@ const NavBar = () => {
                 >
                     Explore
                 </Text>
-                <Text hoverColor="#3C3C3C" color="darkgray" size="14px" onClick={() => {}}>
-                    Success Stories
+                <Text
+                    hoverColor="#3C3C3C"
+                    color="darkgray"
+                    size="14px"
+                    onClick={() => {
+                        history.push(URL.createProject);
+                    }}
+                >
+                    Start a Project
                 </Text>
                 <Text hoverColor="#3C3C3C" color="darkgray" size="14px" onClick={() => {}}>
                     Join Us
