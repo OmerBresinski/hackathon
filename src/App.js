@@ -54,7 +54,7 @@ const App = () => {
             ...user,
             userName: `${user.firstName} ${user.lastName}`,
             userProfileImage: user.picture,
-            role: projects[7]?.role
+            role: projects[0]?.role
         });
     };
 
