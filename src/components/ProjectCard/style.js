@@ -49,10 +49,8 @@ export const Description = styled.div`
 export const Text = styled.div``;
 
 export const Image = styled.img`
-    width: 250px;
     height: 230px;
     border-radius: 30px;
-    margin-inline-start: 80px;
 `;
 
 export const ButtonWrapper = styled.div`
