@@ -3,16 +3,14 @@ import React from "react";
 import * as S from "./style";
 
 function List(props) {
+    console.log(props);
+
+    console.log(props.items.filter((item) => item.title.toLowerCase().includes(props.searchString?.toLowerCase() || "")));
+
     return (
-        <S.ListContainer>
+        <S.ListContainer columns={props.columns}>
             {props.items
-                .filter((item) =>
-                    props.searchString
-                        ? item.title
-                              .toLowerCase()
-                              .includes(props.searchString.toLowerCase())
-                        : item
-                )
+                .filter((item) => item.title.toLowerCase().includes(props.searchString?.toLowerCase() || ""))
                 .map((item) => {
                     return (
                         <Card

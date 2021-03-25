@@ -14,17 +14,13 @@ function Card(props) {
             <S.Image src={props.image}></S.Image>
             <S.HeaderContainer>
                 <S.ProfileContainer>
-                    <Avatar
-                        src={props.userProfileImage}
-                        width={"40px"}
-                        height={"40px"}
-                    />
+                    <Avatar src={props.userProfileImage} width={"40px"} height={"40px"} />
                     <S.ProfileName>
-                        <Text size='14px' color='#333333' bold>
+                        <Text size="14px" color="#333333" bold>
                             {props.userName}
                         </Text>
-                        <Text size='14px' color='#333333'>
-                            {props.role}
+                        <Text size="14px" color="#333333">
+                            {props.title}
                         </Text>
                     </S.ProfileName>
                 </S.ProfileContainer>
@@ -37,7 +33,7 @@ function Card(props) {
                     {props.lookingFor?.map((wanted) => (
                         <S.WantedRow>
                             <S.Dot />
-                            <Text size='14px' color='#333333'>
+                            <Text size="14px" color="#333333">
                                 {wanted}
                             </Text>
                         </S.WantedRow>
@@ -45,13 +41,7 @@ function Card(props) {
                 </S.Wanted>
             </S.Description>
             <S.ButtonWrapper>
-                <Button
-                    label='Read More'
-                    height='40px'
-                    width='50px'
-                    textSize='14px'
-                    onClick={() => history.push(`${URL.project}/${props.id}`)}
-                />
+                <Button label="Read More" height="40px" width="50px" textSize="14px" onClick={() => history.push(`${URL.project}/${props.id}`)} />
             </S.ButtonWrapper>
         </S.CardContainer>
     );

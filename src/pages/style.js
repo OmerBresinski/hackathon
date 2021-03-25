@@ -77,13 +77,11 @@ export const FormContainer = styled.div`
     gap: 15px;
     padding: 20px;
     margin-top: 20px;
-
-`
+`;
 
 export const CreateProjectContainer = styled.div`
     padding: 100px;
-
-`
+`;
 
 export const FormCardContainer = styled.div`
     padding: 50px;
@@ -91,17 +89,33 @@ export const FormCardContainer = styled.div`
     border-radius: 50px;
     -webkit-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);`
+    box-shadow: 0px 2px 63px 9px rgba(0, 0, 0, 0.15);
+`;
 
 export const BottomFormSection = styled.div`
-display:flex;
-justify-content: space-around;
-margin: 30px 0;
-gap: 35px;
-`
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    gap: 35px;
+`;
 
 export const Separator = styled.div`
     background-color: #c3c3c3;
     width: 100%;
     height: 2px;
+`;
+
+export const Feed = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 100px;
+    margin-block-end: 300px;
+`;
+
+export const InputWrapper = styled.div`
+    display: flex;
+    width: 500px;
+    padding: 10px 0px;
+    justify-content: center;
 `;

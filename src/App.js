@@ -21,10 +21,10 @@ const App = () => {
     }, []);
 
     const handleProjectSubmit = (projectInfo) => {
-        const projects = [...projectsData]
-        projects.push(projectInfo)
-        setProjectsData(projects)
-    }
+        const projects = [...projectsData];
+        projects.push(projectInfo);
+        setProjectsData(projects);
+    };
 
     const fetchFakeData = async () => {
         const users = await getUsers();
@@ -48,34 +48,14 @@ const App = () => {
         <>
             <Router>
                 <NavBar />
-                <Route
-                    path={URL.feed}
-                    component={() => <Feed items={projectsData}></Feed>}
-                ></Route>
-                <Route
-                    path={`${URL.project}/:projectId`}
-                    component={(props) => (
-                        <Project {...props} projects={projectsData} />
-                    )}
-                />
-                <Route
-                    path={URL.createProject}
-                    component={() => <CreateProject onSubmitProject={handleProjectSubmit}></CreateProject>}
-                    exact
-                />
+                <Route path={URL.feed} component={() => <Feed items={projectsData}></Feed>}></Route>
+                <Route path={`${URL.project}/:projectId`} component={(props) => <Project {...props} projects={projectsData} />} />
+                <Route path={URL.createProject} component={() => <CreateProject onSubmitProject={handleProjectSubmit}></CreateProject>} exact />
 
-                <Route
-                    path={URL.home}
-                    component={() => <Home projects={projectsData} />}
-                    exact
-                />
+                <Route path={URL.home} component={() => <Home projects={projectsData} />} exact />
             </Router>
             <div style={{ display: "flex", marginTop: "50px" }}>
-                <img
-                    src={footer}
-                    alt=''
-                    style={{ maxWidth: "100vw", height: "auto" }}
-                />
+                <img src={footer} alt="" style={{ maxWidth: "100vw", height: "auto" }} />
             </div>
         </>
     );
@@ -129,6 +109,110 @@ const projects = [
         role: "Film Maker",
         lookingFor: ["UX/UI Designers", "Marketing Majors"],
         image: project6,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
+    },
+    {
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm",
+        title: "fhefeuf",
+        role: "Environmental Researcher",
+        lookingFor: ["Film Makers, Environmental Researchers"],
+        image: project7,
     },
     {
         description:
