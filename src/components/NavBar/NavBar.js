@@ -17,6 +17,16 @@ const NavBar = () => {
                 <img src={notification} alt="" style={{ cursor: "pointer" }} />
             </S.NavGroup>
             <S.NavGroup>
+                <Text
+                    hoverColor="#3C3C3C"
+                    color="darkgray"
+                    size="14px"
+                    onClick={() => {
+                        history.push(URL.home);
+                    }}
+                >
+                    Home
+                </Text>
                 <Text hoverColor="#3C3C3C" color="darkgray" size="14px" onClick={() => {}}>
                     About
                 </Text>
